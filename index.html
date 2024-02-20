@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador de Palavras</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <header class="logo">
+      <img src="./assets/aluraLogo.svg" alt="Alura Logo" />
+    </header>
+    <main class="conteudo">
+      <textarea
+        class="conteudo__input"
+        cols="60"
+        rows="10"
+        placeholder="Digite seu texto aqui"
+      ></textarea>
+      <section class="conteudo__div__resp">
+        <textarea
+          class="conteudo__div__resp__result"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </section>
+    </main>
+    <footer class="rodape">
+      <section class="rodape__aviso">
+        <img
+          class="rodape__aviso__img"
+          src="./assets/bi_exclamation-circle-fill.svg"
+          alt="ponto de exclamação"
+        />
+        <h5 class="rodape__aviso__img">
+          Apenas letras minúsculas e sem acento.
+        </h5>
+      </section>
+      <section class="rodape__btn">
+        <button class="rodape__btn__btns" onclick="criptografar()">
+          Criptografar
+        </button>
+        <button class="rodape__btn__btns" onclick="descriptografar()">
+          Descriptografar
+        </button>
+      </section>
+    </footer>
+    <script src="./script/app.js"></script>
+  </body>
+</html>
