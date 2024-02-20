@@ -18,12 +18,16 @@
         rows="10"
         placeholder="Digite seu texto aqui"
       ></textarea>
-      <section class="conteudo__div__resp">
+      <section class="conteudo__div__resp" id="div_resp">
         <textarea
           class="conteudo__div__resp__result"
+          id="result"
           cols="30"
           rows="10"
         ></textarea>
+        <h1 class="notFound__text" id="notFound__text" style="display: none;">Não há nenhuma mensagem para criptografar</h1>
+        <img class="img" id="imagem" src="./assets/notFound.svg" alt="Imagem de não encontrado" style="display: none;">
+        <button class="conteudo__div__resp__copy" id="copy" style="display: none;">Copiar</button>
       </section>
     </main>
     <footer class="rodape">
