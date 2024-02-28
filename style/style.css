@@ -17,6 +17,8 @@ body {
   justify-content: center;
 }
 
+
+
 .conteudo__input {
   background-color: transparent;
   outline: none;
@@ -138,5 +140,12 @@ body {
 }
 
 @media (max-width: 900px) {
-  
+  .logo{
+    display: flex;
+    justify-content: center;
+  }
+
+  .img{
+    display: none;
+  }
 }

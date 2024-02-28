@@ -4,7 +4,7 @@ const criptografar = () => {
     const textoEntrada = document.querySelector('.conteudo__input').value;
 
     if (textoEntrada) {
-        outNotFoud()
+        outNotFound()
         const listChar = textoEntrada.split('');
         const textoEncript = [];
 
@@ -45,7 +45,7 @@ const descriptografar = () => {
     const textoEntrada = document.querySelector('.conteudo__input').value;
 
     if (textoEntrada) {
-        outNotFoud()
+        outNotFound()
         const textoDescript = textoEntrada
             .replaceAll('ai', 'a')
             .replaceAll('enter', 'e')
@@ -64,13 +64,6 @@ const descriptografar = () => {
 
 }
 
-const toggle = () => {
-
-    if (ocument.querySelector('.conteudo__div__resp__copy')) {
-        document.querySelector('.conteudo__div__resp__copy').remove();
-    }
-
-}
 
 
 const copy = () => {
@@ -87,7 +80,7 @@ const copy = () => {
 }
 
 
-const outNotFoud = () => {
+const outNotFound = () => {
     document.getElementById('copy').style.display = 'inline';
     document.getElementById('result').style.display = 'inline';
     document.getElementById('imagem').style.display = 'none';
